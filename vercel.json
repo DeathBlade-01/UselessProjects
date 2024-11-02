@@ -1,8 +1,7 @@
 {
     "builds": [
     {
-        "src": "src/index.js",
-        "dest": "public"
+        "src": "src/index.js"
     }
     ],
     "framework": "react" 
