@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { Timer, Brain, Zap, Trophy, Loader2, Clock } from 'lucide-react';
+import { Trophy, Loader2, Clock } from 'lucide-react';
 
 // Define interfaces
 interface Stat {
@@ -37,34 +37,34 @@ interface HighScoreEntry {
 interface HighScores {
     [key: string]: HighScoreEntry[];
 }
-const sentences = {
-    easy: [
-        "The quick brown fox jumps over the lazy dog",
-        "Pack my box with five dozen liquor jugs",
-        "How vexingly quick daft zebras jump",
-        "The five boxing wizards jump quickly",
-        "Sphinx of black quartz, judge my vow",
-        "A wizard's job is to vex chumps quickly in fog",
-        "The lazy painter was fixing broken quartz",
-        "Jackdaws love my big sphinx of quartz",
-        "Two driven jocks help fax my big quiz",
-        "Five quacking zephyrs jolt my wax bed"
-    ],
-    medium: [
-        "The mysterious old grandfather clock chimed thirteen times at midnight",
-        "Scientists discovered a new species of fluorescent butterflies in the Amazon",
-        "The ancient manuscript revealed secrets about medieval cooking techniques",
-        "Professional skydivers performed elaborate formations during sunset",
-        "Archeologists uncovered a perfectly preserved Roman mosaic beneath the city"
-    ],
-    hard: [
-        "The quantum physicist explained the peculiarities of parallel universes to bewildered students during the symposium",
-        "Environmental researchers documented the unprecedented migration patterns of Arctic wildlife amid climate changes",
-        "The revolutionary artificial intelligence system demonstrated remarkable capabilities in solving complex mathematical theorems",
-        "Distinguished anthropologists uncovered evidence suggesting advanced astronomical knowledge among ancient civilizations",
-        "Pioneering neuroscientists identified previously unknown neural pathways responsible for processing abstract thoughts"
-    ]
-};
+// const sentences = {
+//     easy: [
+//         "The quick brown fox jumps over the lazy dog",
+//         "Pack my box with five dozen liquor jugs",
+//         "How vexingly quick daft zebras jump",
+//         "The five boxing wizards jump quickly",
+//         "Sphinx of black quartz, judge my vow",
+//         "A wizard's job is to vex chumps quickly in fog",
+//         "The lazy painter was fixing broken quartz",
+//         "Jackdaws love my big sphinx of quartz",
+//         "Two driven jocks help fax my big quiz",
+//         "Five quacking zephyrs jolt my wax bed"
+//     ],
+//     medium: [
+//         "The mysterious old grandfather clock chimed thirteen times at midnight",
+//         "Scientists discovered a new species of fluorescent butterflies in the Amazon",
+//         "The ancient manuscript revealed secrets about medieval cooking techniques",
+//         "Professional skydivers performed elaborate formations during sunset",
+//         "Archeologists uncovered a perfectly preserved Roman mosaic beneath the city"
+//     ],
+//     hard: [
+//         "The quantum physicist explained the peculiarities of parallel universes to bewildered students during the symposium",
+//         "Environmental researchers documented the unprecedented migration patterns of Arctic wildlife amid climate changes",
+//         "The revolutionary artificial intelligence system demonstrated remarkable capabilities in solving complex mathematical theorems",
+//         "Distinguished anthropologists uncovered evidence suggesting advanced astronomical knowledge among ancient civilizations",
+//         "Pioneering neuroscientists identified previously unknown neural pathways responsible for processing abstract thoughts"
+//     ]
+// };
 
 interface RealtimeMetric {
     timestamp: number;
